@@ -1,0 +1,63 @@
+@if $enable-flex {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+            @for $size from 1 through $grid-columns {
+                .col-#{$breakpoint}-#{$size} {
+                    max-width: percentage($size / $grid-columns);
+                }
+            }
+        }
+    }
+}
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+ 
+body, table, div, p {font-family:'Nanum Gothic';}
+#mainImage
+{
+	text-align:center;color:white;
+	background-position:center;
+	text-shadow:#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+	#000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+	height:300px;background-image:url("../img/main.jpg");background-size:cover;
+	margin:0 0 15px 0;
+}
+
+.workshopList:hover
+{
+	background-color:#fafafa;
+	cursor:pointer;
+}
+
+
+.btn-default {
+      background: #FF4000;
+      color: #fff;
+}
+    .btn-default:hover {
+  background: #fff;
+  color: #000;
+    }
+
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }

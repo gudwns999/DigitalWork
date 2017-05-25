@@ -1,0 +1,55 @@
+#registerContainer
+{
+	border:1px solid #d9d9d9;
+	max-width:900px;
+	margin:0 auto;
+	padding:10px 10px 10px 10px;
+	border-radius:4px;
+}
+
+.inputForm
+{
+	width:100%;
+	margin:15px 0 20px 0;
+}
+
+#emailForm div
+{
+	
+	display: flex; align-items: center;
+}
+
+#submitBtn
+{
+	background-color:#f4511e;
+	border:none;
+}
+
+#submitBtn:hover
+{
+	background-color:#CC3100;
+	border:none;
+}
+
+.btn-default {
+      background: #FF4000;
+      color: #fff;
+	}
+    .btn-default:hover {
+	  background: #fff;
+	  color: #000;
+    }
+	.btn-default2 {
+      background: #FF4000;
+      color: #fff;
+	}
+    .btn-default2:hover {
+	  background: #fff;
+	  color: #000;
+    }
+	.nav-pills a {
+	color:#FF4000;
+	}
+	.nav-pills > li.active > a {
+    background-color:#FF4000;
+	}
